@@ -30,7 +30,6 @@
 
 <div class="reels">
     <div>
-
         <div class="reel reel-0">
             <p>Reel 0</p>
         </div>
@@ -51,19 +50,40 @@
         </div>
     </div>
 </div>
+
+<div class="try">
+    <p class="res1"> try</p>
+   </div>
+
 <script type="text/javascript">
     var reel0 = document.getElementsByClassName("reel-0")[0];
     for (var i = 0; i < Reels.reelsets[0].length; i++) {
         var div = document.createElement("div");
+        div.setAttribute("class","symbol");
         div.setAttribute("number", i);
         div.innerHTML = Reels.reelsets[0][i];
         reel0.appendChild(div);
 
         var result = document.getElementsByClassName("result")[0];
+        var aaar = document.getElementsByClassName("res1")[0];
         div.onclick = function () {
             result.innerHTML = this.getAttribute("number")+',';
+            var test = this.getAttribute("number");
+            aaar = [];
+            aaar.push(Reels.reelsets[0][+test], Reels.reelsets[0][+test+1], Reels.reelsets[0][+test+2], Reels.reelsets[0][+test+3], Reels.reelsets[0][+test+4],Reels.reelsets[0][+test+5]);
+            aaar.innerHTML = this.getAttribute("res1");
+            console.log(aaar);
         }
+
     }
+
+
+    var divres =document.createElement("div");
+    var tab = document.getElementsByClassName("res1");
+    divres.onclick=function () {
+        tab.innerHTML = this.getAttribute("number");
+    }
+
 
     var reel1 = document.getElementsByClassName("reel-1")[0];
     for (var b = 0; b < Reels.reelsets[1].length; b++) {
