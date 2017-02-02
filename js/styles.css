@@ -23,3 +23,6 @@
 .reel > div {
     font-size: 13px;
 }
+p{
+    display: inline;
+}
