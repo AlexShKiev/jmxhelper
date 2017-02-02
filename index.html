@@ -71,21 +71,24 @@
     var reel0 = document.getElementsByClassName("reel-0")[0];
     for (var i = 0; i < Reels.reelsets[0].length; i++) {
         var div = document.createElement("div");
-        var aaar = document.createElement("div");
+        var upd1 = document.createElement("div");
         div.setAttribute("class","symbol");
         div.setAttribute("number", i);
+
         div.innerHTML = Reels.reelsets[0][i];
         reel0.appendChild(div);
 
         var result = document.getElementsByClassName("result")[0];
-        var aaar = document.getElementsByClassName("res1")[0];
+        var upd2 = document.getElementsByClassName("res1");
+
         div.onclick = function () {
             result.innerHTML = this.getAttribute("number")+',';
+
             var test = this.getAttribute("number");
-            aaar = [];
-            aaar.push(Reels.reelsets[0][+test], Reels.reelsets[0][+test+1], Reels.reelsets[0][+test+2], Reels.reelsets[0][+test+3], Reels.reelsets[0][+test+4],Reels.reelsets[0][+test+5]);
-            aaar.innerHTML = this.getAttribute("res1");
-            console.log(aaar);
+            upd = [];
+            upd.push(Reels.reelsets[0][+test], Reels.reelsets[0][+test+1], Reels.reelsets[0][+test+2], Reels.reelsets[0][+test+3], Reels.reelsets[0][+test+4],Reels.reelsets[0][+test+5]);
+            console.log(upd)
+
         }
 
     }
@@ -103,8 +106,14 @@
         var result2 = document.getElementsByClassName("result2")[0];
         div1.onclick = function () {
             result2.innerHTML = this.getAttribute("number")+',';
+
+            var test = this.getAttribute("number");
+            upd1 = [];
+            upd1.push(Reels.reelsets[1][+test], Reels.reelsets[1][+test+1], Reels.reelsets[1][+test+2], Reels.reelsets[1][+test+3], Reels.reelsets[1][+test+4],Reels.reelsets[1][+test+5]);
+            console.log(upd1)
         }
     }
+
     var reel2 = document.getElementsByClassName("reel-2")[0];
     for (var c = 0; c < Reels.reelsets[2].length; c++) {
         var div2 = document.createElement("div");
@@ -115,6 +124,11 @@
         var result3 = document.getElementsByClassName("result3")[0];
         div2.onclick = function () {
             result3.innerHTML = this.getAttribute("number")+',';
+
+            var test = this.getAttribute("number");
+            upd2 = [];
+            upd2.push(Reels.reelsets[2][+test], Reels.reelsets[2][+test+1], Reels.reelsets[2][+test+2], Reels.reelsets[2][+test+3], Reels.reelsets[2][+test+4],Reels.reelsets[2][+test+5]);
+            console.log(upd2)
         }
     }
     var reel3 = document.getElementsByClassName("reel-3")[0];
@@ -127,6 +141,11 @@
         var result4 = document.getElementsByClassName("result4")[0];
         div3.onclick = function () {
             result4.innerHTML = this.getAttribute("number")+',';
+
+            var test = this.getAttribute("number");
+            upd3 = [];
+            upd3.push(Reels.reelsets[3][+test], Reels.reelsets[3][+test+1], Reels.reelsets[3][+test+2], Reels.reelsets[3][+test+3], Reels.reelsets[3][+test+4],Reels.reelsets[3][+test+5]);
+            console.log(upd3)
         }
     }
     var reel4 = document.getElementsByClassName("reel-4")[0];
@@ -139,6 +158,11 @@
         var result5 = document.getElementsByClassName("result5")[0];
         div4.onclick = function () {
             result5.innerHTML = this.getAttribute("number")+',';
+
+            var test = this.getAttribute("number");
+            upd4 = [];
+            upd4.push(Reels.reelsets[4][+test], Reels.reelsets[4][+test+1], Reels.reelsets[4][+test+2], Reels.reelsets[4][+test+3], Reels.reelsets[4][+test+4],Reels.reelsets[4][+test+5]);
+            console.log(upd4)
         }
     }
     var reel5 = document.getElementsByClassName("reel-5")[0];
@@ -151,6 +175,11 @@
         var result6 = document.getElementsByClassName("result6")[0];
         div5.onclick = function () {
             result6.innerHTML = this.getAttribute("number");
+
+            var test = this.getAttribute("number");
+            upd5 = [];
+            upd5.push(Reels.reelsets[4][+test], Reels.reelsets[4][+test+1], Reels.reelsets[4][+test+2], Reels.reelsets[4][+test+3], Reels.reelsets[4][+test+4],Reels.reelsets[4][+test+5]);
+            console.log(upd5)
         }
 
 
