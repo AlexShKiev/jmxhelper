@@ -29,36 +29,49 @@
 </div>
 
 <div class="reels">
-    <div>
-        <div class="reel reel-0">
-            <p>Reel 0</p>
-        </div>
-        <div class="reel reel-1">
-            <p>Reel 1</p>
-        </div>
-        <div class="reel reel-2">
-            <p>Reel 2</p>
-        </div>
-        <div class="reel reel-3">
-            <p>Reel 3</p>
-        </div>
-        <div class="reel reel-4">
-            <p>Reel 4</p>
-        </div>
-        <div class="reel reel-5">
-            <p>Reel 5</p>
-        </div>
+    <div class="reelTitle">
+        <p>Reel 0</p>
+    </div>
+    <div class="reelTitle">
+        <p>Reel 1</p>
+    </div>
+    <div class="reelTitle">
+        <p>Reel 2</p>
+    </div>
+    <div class="reelTitle">
+        <p>Reel 3</p>
+    </div>
+    <div class="reelTitle">
+        <p>Reel 4</p>
+    </div>
+    <div class="reelTitle">
+        <p>Reel 5</p>
+    </div>
+    <br>
+    <div class="reel reel-0">
+    </div>
+    <div class="reel reel-1">
+    </div>
+    <div class="reel reel-2">
+    </div>
+    <div class="reel reel-3">
+    </div>
+    <div class="reel reel-4">
+    </div>
+    <div class="reel reel-5">
     </div>
 </div>
 
+
 <div class="try">
-    <p class="res1"> try</p>
+    <div class="res1"> try</div>
    </div>
 
 <script type="text/javascript">
     var reel0 = document.getElementsByClassName("reel-0")[0];
     for (var i = 0; i < Reels.reelsets[0].length; i++) {
         var div = document.createElement("div");
+        var aaar = document.createElement("div");
         div.setAttribute("class","symbol");
         div.setAttribute("number", i);
         div.innerHTML = Reels.reelsets[0][i];
@@ -78,11 +91,6 @@
     }
 
 
-    var divres =document.createElement("div");
-    var tab = document.getElementsByClassName("res1");
-    divres.onclick=function () {
-        tab.innerHTML = this.getAttribute("number");
-    }
 
 
     var reel1 = document.getElementsByClassName("reel-1")[0];
