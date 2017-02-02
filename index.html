@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRAND NEW HELPER</title>
+</head>
+<body>
+<link href="js/styles.css" rel="stylesheet">
+<script src="js/reelset.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+<div>
+    <p>Result of click</p>
+    <p class="result"></p>
+    <p class="result2"></p>
+    <p class="result3"></p>
+    <p class="result4"></p>
+    <p class="result5"></p>
+    <p class="result6"></p>
+</div>
+<div class="reels">
+    <div>
+
+        <div class="reel reel-0">
+            <p>Reel 0</p>
+        </div>
+        <div class="reel reel-1">
+            <p>Reel 1</p>
+        </div>
+        <div class="reel reel-2">
+            <p>Reel 2</p>
+        </div>
+        <div class="reel reel-3">
+            <p>Reel 3</p>
+        </div>
+        <div class="reel reel-4">
+            <p>Reel 4</p>
+        </div>
+        <div class="reel reel-5">
+            <p>Reel 5</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var reel0 = document.getElementsByClassName("reel-0")[0];
+    for (var i = 0; i < Reels.reelsets[0].length; i++) {
+        var div = document.createElement("div");
+        div.setAttribute("number", i);
+        div.innerHTML = Reels.reelsets[0][i];
+        reel0.appendChild(div);
+
+        var result = document.getElementsByClassName("result")[0];
+        div.onclick = function () {
+            result.innerHTML = this.getAttribute("number");
+        }
+    }
+
+    var reel1 = document.getElementsByClassName("reel-1")[0];
+    for (var b = 0; b < Reels.reelsets[1].length; b++) {
+        var div1 = document.createElement("div");
+        div1.setAttribute("number", b);
+        div1.innerHTML = Reels.reelsets[1][b];
+        reel1.appendChild(div1);
+
+        var result2 = document.getElementsByClassName("result2")[0];
+        div1.onclick = function () {
+            result2.innerHTML = this.getAttribute("number");
+        }
+    }
+    var reel2 = document.getElementsByClassName("reel-2")[0];
+    for (var c = 0; c < Reels.reelsets[2].length; c++) {
+        var div2 = document.createElement("div");
+        div2.setAttribute("number", c);
+        div2.innerHTML = Reels.reelsets[2][c];
+        reel2.appendChild(div2);
+
+        var result3 = document.getElementsByClassName("result3")[0];
+        div2.onclick = function () {
+            result3.innerHTML = this.getAttribute("number");
+        }
+    }
+    var reel3 = document.getElementsByClassName("reel-3")[0];
+    for (var a = 0; a < Reels.reelsets[3].length; a++) {
+        var div3 = document.createElement("div");
+        div3.setAttribute("number", a);
+        div3.innerHTML = Reels.reelsets[3][a];
+        reel3.appendChild(div3);
+
+        var result4 = document.getElementsByClassName("result4")[0];
+        div3.onclick = function () {
+            result4.innerHTML = this.getAttribute("number");
+        }
+    }
+    var reel4 = document.getElementsByClassName("reel-4")[0];
+    for (var d = 0; d < Reels.reelsets[4].length; d++) {
+        var div4 = document.createElement("div");
+        div4.setAttribute("number", d);
+        div4.innerHTML = Reels.reelsets[4][d];
+        reel4.appendChild(div4);
+
+        var result5 = document.getElementsByClassName("result5")[0];
+        div4.onclick = function () {
+            result5.innerHTML = this.getAttribute("number");
+        }
+    }
+    var reel5 = document.getElementsByClassName("reel-5")[0];
+    for (var e = 0; e < Reels.reelsets[4].length; e++) {
+        var div5 = document.createElement("div");
+        div5.setAttribute("number", e);
+        div5.innerHTML = Reels.reelsets[4][e];
+        reel5.appendChild(div5);
+
+        var result6 = document.getElementsByClassName("result6")[0];
+        div5.onclick = function () {
+            result6.innerHTML = this.getAttribute("number");
+        }
+    }
+
+
+</script>
+</body>
+</html>

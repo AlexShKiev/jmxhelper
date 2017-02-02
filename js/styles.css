@@ -1,0 +1,25 @@
+.reels {
+    font-size: 0;
+}
+.reel {
+
+    display: inline-block;
+    border: 1px solid #000;
+    vertical-align: top;
+    height:200px;
+    width:200px;
+    overflow:auto;
+
+    color:black;
+    scrollbar-base-color:gold;
+    font-family:sans-serif;
+    padding:10px
+}
+
+.reel > p {
+     font-size: 15px;
+     font-weight: bold;
+ }
+.reel > div {
+    font-size: 13px;
+}
