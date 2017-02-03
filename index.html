@@ -64,31 +64,35 @@
 
 
 <div class="try">
-    <div class="res1"> try</div>
+    <div class="try res1"></div>
+    <div class="try res2"></div>
+    <div class="try res3"></div>
+    <div class="try res4"></div>
+    <div class="try res5"></div>
+    <div class="try res6"></div>
    </div>
 
 <script type="text/javascript">
     var reel0 = document.getElementsByClassName("reel-0")[0];
     for (var i = 0; i < Reels.reelsets[0].length; i++) {
         var div = document.createElement("div");
-        var upd1 = document.createElement("div");
         div.setAttribute("class","symbol");
         div.setAttribute("number", i);
-
         div.innerHTML = Reels.reelsets[0][i];
         reel0.appendChild(div);
-
         var result = document.getElementsByClassName("result")[0];
-        var upd2 = document.getElementsByClassName("res1");
+        var res1 = document.getElementsByClassName("res1")[0];
+
 
         div.onclick = function () {
+            res1.innerHTML = "";
             result.innerHTML = this.getAttribute("number")+',';
-
             var test = this.getAttribute("number");
-            upd = [];
-            upd.push(Reels.reelsets[0][+test], Reels.reelsets[0][+test+1], Reels.reelsets[0][+test+2], Reels.reelsets[0][+test+3], Reels.reelsets[0][+test+4],Reels.reelsets[0][+test+5]);
-            console.log(upd)
-
+            for (var i = 0; i < 5; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = Reels.reelsets[0][+test + i];
+                res1.appendChild(div);
+            }
         }
 
     }
@@ -102,15 +106,18 @@
         div1.setAttribute("number", b);
         div1.innerHTML = Reels.reelsets[1][b];
         reel1.appendChild(div1);
-
         var result2 = document.getElementsByClassName("result2")[0];
-        div1.onclick = function () {
-            result2.innerHTML = this.getAttribute("number")+',';
+        var res2 = document.getElementsByClassName("res2")[0];
 
+        div1.onclick = function () {
+            res2.innerHTML = "";
+            result2.innerHTML = this.getAttribute("number")+',';
             var test = this.getAttribute("number");
-            upd1 = [];
-            upd1.push(Reels.reelsets[1][+test], Reels.reelsets[1][+test+1], Reels.reelsets[1][+test+2], Reels.reelsets[1][+test+3], Reels.reelsets[1][+test+4],Reels.reelsets[1][+test+5]);
-            console.log(upd1)
+            for (var i = 0; i < 5; i++) {
+                var div1 = document.createElement("div");
+                div1.innerHTML = Reels.reelsets[1][+test + i];
+                res2.appendChild(div1);
+            }
         }
     }
 
@@ -120,15 +127,18 @@
         div2.setAttribute("number", c);
         div2.innerHTML = Reels.reelsets[2][c];
         reel2.appendChild(div2);
-
+        var res3 = document.getElementsByClassName("res3")[0];
         var result3 = document.getElementsByClassName("result3")[0];
+
         div2.onclick = function () {
             result3.innerHTML = this.getAttribute("number")+',';
-
+            res3.innerHTML = "";
             var test = this.getAttribute("number");
-            upd2 = [];
-            upd2.push(Reels.reelsets[2][+test], Reels.reelsets[2][+test+1], Reels.reelsets[2][+test+2], Reels.reelsets[2][+test+3], Reels.reelsets[2][+test+4],Reels.reelsets[2][+test+5]);
-            console.log(upd2)
+            for (var i = 0; i < 5; i++) {
+                var div2 = document.createElement("div");
+                div2.innerHTML = Reels.reelsets[2][+test + i];
+                res3.appendChild(div2);
+            }
         }
     }
     var reel3 = document.getElementsByClassName("reel-3")[0];
@@ -137,15 +147,17 @@
         div3.setAttribute("number", a);
         div3.innerHTML = Reels.reelsets[3][a];
         reel3.appendChild(div3);
-
+        var res4 = document.getElementsByClassName("res4")[0];
         var result4 = document.getElementsByClassName("result4")[0];
         div3.onclick = function () {
             result4.innerHTML = this.getAttribute("number")+',';
-
+            res4.innerHTML = "";
             var test = this.getAttribute("number");
-            upd3 = [];
-            upd3.push(Reels.reelsets[3][+test], Reels.reelsets[3][+test+1], Reels.reelsets[3][+test+2], Reels.reelsets[3][+test+3], Reels.reelsets[3][+test+4],Reels.reelsets[3][+test+5]);
-            console.log(upd3)
+            for (var i = 0; i < 5; i++) {
+                var div3 = document.createElement("div");
+                div3.innerHTML = Reels.reelsets[3][+test + i];
+                res4.appendChild(div3);
+            }
         }
     }
     var reel4 = document.getElementsByClassName("reel-4")[0];
@@ -154,15 +166,18 @@
         div4.setAttribute("number", d);
         div4.innerHTML = Reels.reelsets[4][d];
         reel4.appendChild(div4);
-
+        var res5 = document.getElementsByClassName("res5")[0];
         var result5 = document.getElementsByClassName("result5")[0];
         div4.onclick = function () {
             result5.innerHTML = this.getAttribute("number")+',';
 
+            res5.innerHTML = "";
             var test = this.getAttribute("number");
-            upd4 = [];
-            upd4.push(Reels.reelsets[4][+test], Reels.reelsets[4][+test+1], Reels.reelsets[4][+test+2], Reels.reelsets[4][+test+3], Reels.reelsets[4][+test+4],Reels.reelsets[4][+test+5]);
-            console.log(upd4)
+            for (var i = 0; i < 5; i++) {
+                var div4 = document.createElement("div");
+                div4.innerHTML = Reels.reelsets[4][+test + i];
+                res5.appendChild(div4);
+            }
         }
     }
     var reel5 = document.getElementsByClassName("reel-5")[0];
@@ -171,15 +186,18 @@
         div5.setAttribute("number", e);
         div5.innerHTML = Reels.reelsets[4][e];
         reel5.appendChild(div5);
-
+        var res6 = document.getElementsByClassName("res6")[0];
         var result6 = document.getElementsByClassName("result6")[0];
         div5.onclick = function () {
             result6.innerHTML = this.getAttribute("number");
 
+            res6.innerHTML = "";
             var test = this.getAttribute("number");
-            upd5 = [];
-            upd5.push(Reels.reelsets[4][+test], Reels.reelsets[4][+test+1], Reels.reelsets[4][+test+2], Reels.reelsets[4][+test+3], Reels.reelsets[4][+test+4],Reels.reelsets[4][+test+5]);
-            console.log(upd5)
+            for (var i = 0; i < 5; i++) {
+                var div5 = document.createElement("div");
+                div5.innerHTML = Reels.reelsets[4][+test + i];
+                res6.appendChild(div5);
+            }
         }
 
 
