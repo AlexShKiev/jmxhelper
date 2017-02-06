@@ -100,7 +100,12 @@ body {
 p{
     display: inline;
 }
-.try {
+
+.outcome {
+    
+}
+
+.reelSet {
     display: inline-block;
     border: 1px solid #000;
 

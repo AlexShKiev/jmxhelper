@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BRAND NEW HELPER</title>
-</head>
+<header>
+   <h1>JMX helper</h1>
+</header>
 <body>
 <link href="js/styles.css" rel="stylesheet">
 <script src="js/clipboard.min.js"></script>
 <script src="js/reelset.js" type="text/javascript"></script>
 <script src="js/init.js" type="text/javascript"></script>
-
-<div >
-    <p>Result of click</p>
-    <div id="copyRes">
-        <p class="result"></p>
-        <p class="result2"></p>
-        <p class="result3"></p>
-        <p class="result4"></p>
-        <p class="result5"></p>
-        <p class="result6"></p>
-    </div>
-    <button class="btn-clipboard" data-clipboard-target="#copyRes">
-        Copy
-    </button>
-    <script>
-        new Clipboard('div+button');
-    </script>
-</div>
-
+    
+<div class="container">
 <div class="reels">
     <div class="reelTitle">
         <p>Reel 0</p>
@@ -61,16 +43,38 @@
     <div class="reel reel-5">
     </div>
 </div>
+    
+<div class="navigation" >
+    <p>Result of click</p>
+    <div id="copyRes">
+        <p class="result"></p>
+        <p class="result2"></p>
+        <p class="result3"></p>
+        <p class="result4"></p>
+        <p class="result5"></p>
+        <p class="result6"></p>
+    </div>
+    <button class="btn-clipboard" data-clipboard-target="#copyRes">
+        Copy
+    </button>
+    <script>
+        new Clipboard('div+button');
+    </script>
+</div>
+</div>
 
-
-<div class="try">
-    <div class="try res1"></div>
-    <div class="try res2"></div>
-    <div class="try res3"></div>
-    <div class="try res4"></div>
-    <div class="try res5"></div>
-    <div class="try res6"></div>
-   </div>
+<div class ="outcome">
+    <div class="reelSet">
+        <div class="reelSet res1"></div>
+        <div class="reelSet res2"></div>
+        <div class="reelSet res3"></div>
+        <div class="reelSet res4"></div>
+        <div class="reelSet res5"></div>
+        <div class="reelSet res6"></div>
+    </div>
+    
+</div>
+    
 
 <script type="text/javascript">
     var reel0 = document.getElementsByClassName("reel-0")[0];
