@@ -1,6 +1,20 @@
+.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
 body {
     background: #f2f2f2;
 }
+
 
 .btn-clipboard {
     background-color: #4CAF50; /* Green */
@@ -12,8 +26,6 @@ body {
     display: inline-block;
     font-size: 16px;
 }
-
-
 
 .reelTitle {
     background-color: #99ccff;
@@ -33,6 +45,10 @@ body {
 
 .reels {
     font-size: 0;
+    float:left;
+    max-width: 1000px;
+    margin: 0 0 30px 30px;
+    padding: 15px 32px;
 }
 .reel {
 
@@ -55,6 +71,15 @@ body {
 }
 .reel > div {
     font-size: 13px;
+}
+
+.navigation {
+    font-size: 0;
+    float:right;
+    max-width: 400px;
+    margin: 0 0 30px 0;
+    padding: 15px 32px;
+
 }
 
 .symbol{
